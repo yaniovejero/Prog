@@ -15,5 +15,5 @@ prog_practico_buscar:
     defaults: { _controller: ProgPracticoBundle:Default:buscar }
     
 prog_practico_ver:
-    pattern:  /ver/{id}
+    pattern:  /ver/
     defaults: { _controller: ProgPracticoBundle:Default:ver }

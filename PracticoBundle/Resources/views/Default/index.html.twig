@@ -1,1 +1,8 @@
-Hello {{ name }}!
+{% extends "ProgPracticoBundle::plantilla.html.twig" %}
+
+{% block contenido %}
+    <h1>Inicio</h1>
+    <h3> Fecha: {{fecha}} </h3>
+    {{mensaje}}
+
+{% endblock %}

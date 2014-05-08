@@ -8,7 +8,11 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        $name="hola";
-        return $this->render('ProgPracticoBundle:Default:index.html.twig', array('name' => $name));
+        $parametros=array(
+            'mensaje'=>'Bienvenido a Mi Web de Nutricion',
+            'fecha'=>date('dd-mm-yyyy'),
+        );
+        return $this->render('ProgPracticoBundle:Default:index.html.twig', $parametros);
     }
+    
 }

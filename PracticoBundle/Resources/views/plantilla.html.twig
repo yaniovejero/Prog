@@ -1,0 +1,29 @@
+{% extends "::base.html.twig" %}
+{% block  stylesheets %}
+    <link href="{{asset('bundles/ProgPractico/css/estilo.css')}}" type="text/css" rel="stylesheet"/>
+{% endblock %}
+
+{% block body %}
+    <div id="cabecera">
+        <h1>Informacion de los Alimentos</h1>
+    </div>
+    <div id="menu">
+        <hr>
+        <a href="{{ path('prog_practico_index')}}">Inicio</a> |
+        <a href="{{ path('prog_practico_listar')}}">Ver Alimentos</a> |
+        <a href="{{ path('prog_practico_insertar')}}">Insertar Alimento</a> |
+        <a href="{{ path('prog_practico_ver')}}">Buscar por ID</a> |
+        <a href="#">Buscar por Energia</a>
+        <hr>
+    </div>
+    <div id="contenido">
+        {% block contenido %}
+        
+        {% endblock %}
+    </div>
+    <div id="pie">
+        <hr>
+        <div aling="center">-Pie de Pagina-</div>
+        <hr>
+    </div>
+{% endblock %}
