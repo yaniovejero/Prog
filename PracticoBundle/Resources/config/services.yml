@@ -1,0 +1,7 @@
+parameters:
+#    prog_practico.example.class: Prog\PracticoBundle\Example
+
+services:
+#    prog_practico.example:
+#        class: %prog_practico.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
