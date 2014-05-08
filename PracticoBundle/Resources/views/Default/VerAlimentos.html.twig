@@ -1,0 +1,24 @@
+{% extends "ProgPracticoBundle::plantilla.html.twig" %}
+
+{% block contenido %}
+    {% for alimento in alimentos %}
+    <h1>{{alimento.nombre}}</h1>
+    <table>
+        <tr>
+            <th>Energia</th>
+            <th>Proteina</th>
+            <th>Hidratos de Carbono</th>
+            <th>Fibra</th>
+            <th>Grasa Total</th>
+        </tr>
+        <tr>
+            <td>{{alimento.energia}}</td>
+            <td>{{alimento.proteina}}</td>
+            <td>{{alimento.hidratocarbono}}</td>
+            <td>{{alimento.fibra}}</td>
+            <td>{{alimento.grasatotal}}</td>
+        </tr>
+    {% endfor %}
+    </table>
+
+{% endblock %}

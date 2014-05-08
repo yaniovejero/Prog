@@ -1,0 +1,29 @@
+{% extends "ProgPracticoBundle::plantilla.html.twig" %}
+
+{% block contenido %}
+{% if mensaje is defined %}
+    <b><span style="color:red;">{{mensaje}}</span></b>
+{% endif %}
+    
+<form action="{{path('prog_practico_insertar')}}" method="POST">
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Energia</th>
+            <th>Proteina</th>
+            <th>H. de Carbono</th>
+            <th>Fibra</th>
+            <th>Grasa Total</th>
+        </tr>
+        <tr>
+            <td><input type="text" name="nombre" value="{{nombre}}" /></td>
+            <td><input type="text" name="energia" value="{{energia}}" /></td>
+            <td><input type="text" name="proteina" value="{{proteina}}" /></td>
+            <td><input type="text" name="hidratocarbono" value="{{hidratocarbono}}" /></td>
+            <td><input type="text" name="fibra" value="{{fibra}}" /></td>
+            <td><input type="text" name="grasa" value="{{grasatotal}}" /></td>
+        </tr>
+    </table>
+    <input type="submit" value="insertar" name="insertar"/>
+</form>
+{% endblock %}

@@ -12,8 +12,8 @@ prog_practico_insertar:
     
 prog_practico_buscar:
     pattern:  /buscar
-    defaults: { _controller: ProgPracticoBundle:Default:buscar }
+    defaults: { _controller: ProgPracticoBundle:Default:buscarPorNombre }
     
 prog_practico_ver:
-    pattern:  /ver/
+    pattern:  /ver/{id}
     defaults: { _controller: ProgPracticoBundle:Default:ver }

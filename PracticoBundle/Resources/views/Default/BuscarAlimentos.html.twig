@@ -1,0 +1,21 @@
+{% extends "ProgPracticoBundle::plantilla.html.twig" %}
+
+{% block contenido %}
+{% if mensaje is defined %}
+    <b><span style="color:red;">{{mensaje}}</span></b>
+{% endif %}
+    
+<form action="{{path('prog_practico_buscar')}}" method="POST">
+    <table>
+        <tr>
+            <th>Nombre de Alimento:</th>
+            <td><input type="text" name="nombre" value="{{nombre}}" /></td>
+        </tr>
+    </table>
+    <input type="submit" value="buscar" name="buscar"/>
+</form
+
+{% if resultado %}
+    {% include 'ProgPracticoBundle:Default:MostrarAlimentos.html.twig' with {'alimentos':resultado} %}
+{%endif%}
+{% endblock %}

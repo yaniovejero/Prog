@@ -1,0 +1,20 @@
+{% extends "ProgPracticoBundle::plantilla.html.twig" %}
+
+{% block contenido %}
+<table>
+    <tr>
+        <th>Alimento (por 100 gr) </th>
+        <th>Energia (Kcal) </th>
+        <th>grasa (g) </th>
+    </tr>
+    {% for alimento in alimentos %}
+    <tr>
+        <td><a href="{{path('prog_practico_ver',{'id':alimento.id})}}">{{alimento.nombre}}</a></td>
+        <td>{{alimento.energia}}</td>
+        <td>{{alimento.grasatotal}}</td>
+    </tr>
+    {% endfor %}
+    
+</table>
+
+{% endblock %}
