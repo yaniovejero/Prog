@@ -1,3 +1,19 @@
-prog_practico_homepage:
-    pattern:  /hello/{name}
+prog_practico_index:
+    pattern:  /
     defaults: { _controller: ProgPracticoBundle:Default:index }
+    
+prog_practico_listar:
+    pattern:  /listar
+    defaults: { _controller: ProgPracticoBundle:Default:listar }
+    
+prog_practico_insertar:
+    pattern:  /insertar
+    defaults: { _controller: ProgPracticoBundle:Default:insertar }
+    
+prog_practico_buscar:
+    pattern:  /buscar
+    defaults: { _controller: ProgPracticoBundle:Default:buscar }
+    
+prog_practico_ver:
+    pattern:  /ver/{id}
+    defaults: { _controller: ProgPracticoBundle:Default:ver }
