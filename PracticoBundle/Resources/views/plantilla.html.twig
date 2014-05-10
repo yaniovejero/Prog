@@ -14,6 +14,7 @@
         <a href="{{ path('prog_practico_listar')}}">Ver Alimentos</a> |
         <a href="{{ path('prog_practico_insertar')}}">Insertar Alimento</a> |
         <a href="{{ path('prog_practico_buscar')}}">Buscar por Nombre</a> |
+        <a href="{{ path('prog_practico_contacto')}}">Mi informacion</a>
         <a href="#">Futuras Consultas....</a>
         <hr>
     </div>
@@ -23,8 +24,11 @@
         {% endblock %}
     </div>
     <div id="pie">
+        {% block pie %}
         <hr>
         <div align="center">-Cuide su Salud . Consultenos: (888)xxxxx-</div>
         <hr>
+        {% endblock %}
+       
     </div>
 {% endblock %}

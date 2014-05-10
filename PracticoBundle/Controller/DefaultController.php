@@ -16,6 +16,15 @@ class DefaultController extends Controller
         return $this->render('ProgPracticoBundle:Default:index.html.twig', $parametros);
     }
     
+    public function contactoAction()
+    {
+        $parametros=array(
+            'nombre'=>'Yanina Ovejero',
+            'telefono'=>'123',
+        );
+        return $this->render('ProgPracticoBundle:Default:contacto.html.twig', $parametros);
+    }
+    
     public function listarAction()
     {
         $base=new Modelo();

@@ -17,3 +17,7 @@ prog_practico_buscar:
 prog_practico_ver:
     pattern:  /ver/{id}
     defaults: { _controller: ProgPracticoBundle:Default:ver }
+
+prog_practico_contacto:
+    pattern:    /contacto
+    defaults: { _controller: ProgPracticoBundle:Default:contacto }
