@@ -20,7 +20,7 @@ class DefaultController extends Controller
     {
         $parametros=array(
             'nombre'=>'Yanina Ovejero',
-            'telefono'=>'123',
+            'telefono'=>'383-234386',
         );
         return $this->render('ProgPracticoBundle:Default:contacto.html.twig', $parametros);
     }
